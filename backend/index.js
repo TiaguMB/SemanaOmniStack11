@@ -25,9 +25,9 @@ const app = express();
  */
 
 
-app.get('/users/', (request, response) => {
+app.get('/users/:id', (request, response) => {
 
-	const params = request.query;
+	const params = request.params;
 
 	console.log(params);
 
