@@ -63,6 +63,29 @@ app.use(express.json());
  * console.log(body)
  */
 
+ /** 
+  * SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+  * NoSQL: MongoDB, CounchDB, etc
+ */
+
+ /**
+  * Driver: SELECT * FROM users
+  * Query Builder: table('users').select('*').where()
+  */
+
+ /**
+  * Knex = Query Builder
+  * 
+  * Instalando o Knex
+  * sudo npm install knex
+  * 
+  * Instalando o SQLite
+  * sudo npm install sqlite3
+  * 
+  * Conexão
+  * sudo npx install knex init
+  */
+
 app.post('/users', (request, response) => {
 	
 	const body = request.body;
@@ -71,7 +94,7 @@ app.post('/users', (request, response) => {
 
 	return response.json({
 		evento: 'Semana OminiStack 11.0',
-		aluno: 'Tiago Barbosa',
+		aluno: 'Cleitin Rasta',
 	});
 });
 
