@@ -72,22 +72,22 @@ app.listen(3333);
   * NoSQL: MongoDB, CounchDB, etc
  */
 
- /**
-  * Driver: SELECT * FROM users
-  * Query Builder: table('users').select('*').where()
-  */
+/**
+ * Driver: SELECT * FROM users
+ * Query Builder: table('users').select('*').where()
+ */
 
- /**
-  * Knex = Query Builder
-  * 
-  * Instalando o Knex
-  * sudo npm install knex
-  * 
-  * Instalando o SQLite
-  * sudo npm install sqlite3
-  * 
-  * Conexão
-  * sudo npx install knex init
-  */
+/**
+ * Knex = Query Builder
+ * 
+ * Instalando o Knex
+ * sudo npm install knex
+ * 
+ * Instalando o SQLite
+ * sudo npm install sqlite3
+ * 
+ * Conexão
+ * sudo npx install knex init
+ */
 
 
