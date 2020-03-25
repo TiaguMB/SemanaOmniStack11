@@ -7,8 +7,8 @@ app.use(express.json());
 /** 
  * Instalação do nodemom para nao ter que ficar reiniciando o aplicativo
  * 
- * npm install nodemom -D
- * O d serve para que a dependencia seja so executada enquanto ha o desenvolvimento
+ * sudo npm install nodemom -D
+ * O D serve para que a dependencia seja so executada enquanto ha o desenvolvimento
  * 
 */
 
