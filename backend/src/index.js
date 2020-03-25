@@ -1,8 +1,12 @@
 const express = require('express');
+const routes = require('./routes');
 
 const app = express();
 
 app.use(express.json());
+app.use(routes);
+
+app.listen(3333);
 
 /** 
  * Instalação do nodemom para nao ter que ficar reiniciando o aplicativo
@@ -86,16 +90,4 @@ app.use(express.json());
   * sudo npx install knex init
   */
 
-app.post('/users', (request, response) => {
-	
-	const body = request.body;
 
-	console.log(body);
-
-	return response.json({
-		evento: 'Semana OminiStack 11.0',
-		aluno: 'Cleitin Rasta',
-	});
-});
-
-app.listen(3333);
