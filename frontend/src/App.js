@@ -1,36 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import Header from './Header';
+import './global.css';
+
+import Logon from './pages/Logon';
 
 function App() {
-	const [counter, setCounter] = useState(0);
-	/**
-	 * Array [valor, funcaoDeAtualizacao]
-	 * 
-	 * let counter = 0;
-	 */
-	
-	function increment() {
-		setCounter(counter + 1);
-
-		/**
-		 * counter++;
-		 * console.log(counter);
-		 */
-	}
-
 	return (
-		<div>
-			<Header>Contador: {counter}</Header>
-			<button onClick={increment}>Incrementar</button>
-		</div>
+		<Logon />
 	);
 }
 
 export default App;
-
-/**
- * Exemplos passando props no Header => title="Semana OmniStack"
- * Ou como children => <Header>(Texto ou HTML aqui)</Header>
- * 
- */
